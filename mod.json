@@ -1,0 +1,16 @@
+{
+	"geode": "5.2.0",
+	"gd": {
+		"win": "2.2081"
+	},
+	"id": "bunchuq1122.lock-startpos-setup",
+	"name": "Pin StartPos",
+	"version": "v1.0.0",
+	"developer": "Bunchuq1122",
+	"description": "Pin StartPos settings",
+	"tags": [
+		"editor",
+		"enhancement",
+		"offline"
+	]
+}
