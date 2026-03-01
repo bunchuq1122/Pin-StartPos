@@ -23,6 +23,9 @@ inline GlobalCache& getCache() {
 class $modify(pinSp, LevelSettingsLayer) {
 	bool init(LevelSettingsObject* object, LevelEditorLayer* layer) {
 		if (!LevelSettingsLayer::init(object, layer)) return false;
+
+		auto& cache = getCache();
+
 		auto mn = CCMenu::create();
 		mn->setID(Mod::get()->getID() + "/pin");
 		auto btn = CCMenuItemSpriteExtra::create(

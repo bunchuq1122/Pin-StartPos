@@ -5,12 +5,16 @@
 	},
 	"id": "bunchuq1122.lock-startpos-setup",
 	"name": "Pin StartPos",
-	"version": "v1.0.0",
+	"version": "v1.0.1",
 	"developer": "Bunchuq1122",
 	"description": "Pin StartPos settings",
 	"tags": [
 		"editor",
 		"enhancement",
 		"offline"
-	]
+	],
+	"links": {
+		"community": "https://github.com/bunchuq1122?tab=repositories",
+		"source": "https://github.com/bunchuq1122?tab=repositories"
+	}
 }
