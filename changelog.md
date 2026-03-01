@@ -7,3 +7,6 @@
 
 # v1.0.2
 - The <cr>pin</c> button now only appears in the <cj>StartPos</c> settings.
+
+# v1.0.3
+- dependencies added

@@ -1,11 +1,11 @@
 {
-	"geode": "5.2.0",
+	"geode": "5.3.0",
 	"gd": {
 		"win": "2.2081"
 	},
 	"id": "bunchuq1122.lock-startpos-setup",
 	"name": "Pin StartPos",
-	"version": "v1.0.2",
+	"version": "v1.0.3",
 	"developer": "Bunchuq1122",
 	"description": "Pin StartPos settings",
 	"tags": [
@@ -16,5 +16,8 @@
 	"links": {
 		"community": "https://github.com/bunchuq1122?tab=repositories",
 		"source": "https://github.com/bunchuq1122?tab=repositories"
+	},
+	"dependencies": {
+		"geode.node-ids": ">=1.22.0"
 	}
 }
