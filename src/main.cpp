@@ -25,7 +25,9 @@ class $modify(pinSp, LevelSettingsLayer) {
 		if (!LevelSettingsLayer::init(object, layer)) return false;
 
 		auto& cache = getCache();
+		auto lay = this->getChildByType<CCLayer>(0);
 
+		if (lay->getChildByType<CustomSongWidget>(0)) return true;
 		auto mn = CCMenu::create();
 		mn->setID(Mod::get()->getID() + "/pin");
 		auto btn = CCMenuItemSpriteExtra::create(
@@ -44,9 +46,7 @@ class $modify(pinSp, LevelSettingsLayer) {
 	void pinSet(CCObject*) {
 		auto& cache = getCache();
 
-		if (!cache.sp) {
-			return;
-		}
+		if (!cache.sp) return;
 
 		cache.pinnedSpeed = cache.sp->m_startSettings->m_startSpeed;
 		cache.pinnedMode = cache.sp->m_startSettings->m_startMode;
