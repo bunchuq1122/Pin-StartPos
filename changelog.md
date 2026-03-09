@@ -13,3 +13,6 @@
 
 # v1.0.4
 - description has been changed.
+
+# v1.0.5
+- use m_buttonMenu instead of new CCMenu

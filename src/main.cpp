@@ -28,18 +28,14 @@ class $modify(pinSp, LevelSettingsLayer) {
 		auto lay = this->getChildByType<CCLayer>(0);
 
 		if (lay->getChildByType<CustomSongWidget>(0)) return true;
-		auto mn = CCMenu::create();
-		mn->setID(Mod::get()->getID() + "/pin");
+		auto mn = m_buttonMenu;
 		auto btn = CCMenuItemSpriteExtra::create(
 			ButtonSprite::create("pin"),
 			this,
 			menu_selector(pinSp::pinSet)
 		);
-		mn->setPosition({457.f,277.f});
-		mn->setContentSize({50.f,70.f});
+		btn->setPosition({170.f,110.f});
 		mn->addChild(btn);
-		mn->setTouchPriority(-600);
-		this->addChild(mn);
 		return true;
 	}
 
